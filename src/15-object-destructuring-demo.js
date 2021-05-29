@@ -13,12 +13,12 @@ let rohitRef = {
 };
 
 // Access the object member
-let username = rohitRef.username;
-let password = rohitRef.password;
-let email = rohitRef.email;
-let mobile = rohitRef.mobile;
-console.log(username, password, email, mobile);
+let username1 = rohitRef.username;
+let password1 = rohitRef.password;
+let email1 = rohitRef.email;
+let mobile1 = rohitRef.mobile;
+console.log(username1, password1, email1, mobile1);
 
 // destructure concept
-let { username1, email1, mobile1, password1 } = rohitRef; // rohitRef is objec, that is getting destructured!!!
-console.log(username1, password1, email1, mobile1);
+let { username, email, mobile, password } = rohitRef; // rohitRef is objec, that is getting destructured!!!
+console.log(username, password, email, mobile);
