@@ -8,7 +8,7 @@ let sum = () => {};
 
 function mathExecutor(callback) {
   if (typeof callback == "function") {
-    const total = myfn(10, 20);
+    const total = callback(10, 20);
     console.log(total);
   }
 }
@@ -16,6 +16,4 @@ function mathExecutor(callback) {
 // mathExecutor(100);
 // mathExecutor("sachin");
 mathExecutor((n1, n2) => n1 + n2);
-mathExecutor(function (n1, n2) {
-  return n1 + n2;
-});
+mathExecutor((n1, n2) => n2 - n1);
